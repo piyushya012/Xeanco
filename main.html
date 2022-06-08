@@ -1,0 +1,144 @@
+<!--
+
+x       x  e e e e      a      n       n     c c c    o o o
+  x   x    e          a   a    n n     n   c        o       o
+    x      e e e     a a a a   n   n   n  c         o       o
+  x   x    e        a       a  n     n n   c        o       o
+x       x  e e e e  a       a  n       n     c c c    o o o
+
+!-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/universal.css"/>
+    <script src = "javascript/sweetalert.min.js"></script>
+    <script src = "javascript/main.js"></script>
+    <title> Shopping Website </title>
+  </head>
+  <body onload="update()" background = "images\mainBack.jpeg" link = "royalblue" vlink = "blue" alink = "green">
+    <div id = "navBack"></div>
+    <p id = "logo" align = "center">
+      <font face = "forte" color = "blue" size = "20">
+        <text onclick = "leave()"> Xeanco Stores <sub>
+          <img src = "images\shoplogo.png" height = "50" width = "50" alt = "cart" hspace = "10"/></sub>
+        </text>
+      </font>
+    </p>
+    <div id = "profile" onclick="profile()">
+      <img src = "images/profile.png" alt = "pic" height = "30" width = "30"/>&nbsp
+      <sup><span id = "user"></span></sup>
+    </div>
+    <div id = "profileNav">
+      <button id = "button" onclick = "logout()">Logout</button>
+      <button id = "button" onclick = "delAcc()">Delete Account</button>
+    </div>
+    <hr size = "20" width = "100%" color = "lightskyblue"/><br/>
+    <font size = "5" face = "aharoni">
+    <table id = "nav" align = "center" cellpadding = "10" cellspacing = "0">
+      <tr bgcolor = "lightskyblue">
+        <td bgcolor = "lightgrey" width = "20%" align = "center">
+          <a href = "about.html"> About </a></td>
+        <td bgcolor = "white" width = "20%" align = "center">
+          <a href = "contact.html"> Contact </a></td>
+        <td bgcolor = "lightgrey" width = "20%" align = "center">
+          <a href = "#start"> Shop </a></td>
+        <td bgcolor = "white" width = "20%" align = "center">
+          <span onclick = "more(1)"> <font color = "blue"> More </font> </span></td>
+        <td bgcolor = "lightgrey" width = "20%" align = "center">
+          <a href = "help.html"> Help </a></td>
+      </tr>
+    </table><br/>
+    </font>
+    <div id = "more">
+      <div id = "moreCont">
+        <font color = "white" face = "georgia">
+          <span id = "sorry"> :( Sorry </span> <br/><br/>
+          We will notify you as soon as we  launch any new <br/> product.
+          Stay connected with us for latest updates.<br/><br/>
+          <button id = "button" onclick = "more(0)"> Ok </button>
+        </font>
+      </div>
+    </div>
+    <font size = "5" color = "lightskyblue" face = "forte">
+      <table id = "features" cellpadding="20" cellspacing="10" align = "center">
+        <tr width = "100%">
+          <td bgcolor = "limegreen" width = "25%" align = "center"> " 25% off on all products "</td>
+          <td bgcolor = "dodgerblue" width = "25%" align = "center"> " Best deals for everyone "</td>
+          <td bgcolor = "teal" width = "25%" align = "center"> " affordable prices "</td>
+          <td bgcolor = "blueviolet" width = "25%" align = "center"> " High quality products "</td>
+        </tr>
+      </table>
+    </font>
+    <font size = "5" color = "white" face = "aharoni">
+    <table id = "products" align = "center" cellpadding = "20" cellspacing = "20">
+      <tr>
+        <td id = "start" bgcolor = "lightskyblue" width = "25%" align = "center"> Foot Wear <br/><br/>
+          <a href = "footwear.html"><img src = "images\footwear.png" width = "80%" alt = "shoes"/></a></td>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center">Clothes <br/><br/>
+          <a href = "clothes.html"><img src = "images\clothes.png" height = "40%" alt = "jacket"/></a></td>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center">Laptop <br/><br/>
+          <a href = "laptop.html"><img src = "images\laptop.png" width = "80%" alt = "laptop"/></a></td>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center">Smartphone <br/>
+          <a href = "smartphone.html"><img src = "images\smartphone.png" width = "80%" alt = "smartphone"></a></td>
+      </tr>
+      <tr>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center">Softwares <br/><br/>
+          <a href = "software.html"><img src = "images\software.png" width = "50%" alt = "software"></td>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center">Books <br/><br/>
+          <a href = "books.html"><img src = "images\book.jpg" height = "40%" alt = "book"/></td>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center">Movies <br/><br/>
+          <a href = "movies.html"><img src = "images\movie.png" height = "60%" alt = "movie"/></td>
+        <td bgcolor = "lightskyblue" width = "25%" align = "center" >Songs <br/><br/>
+          <a href = "songs.html"><img src = "images\song.png" height = "17%" alt = "song"/></td>
+      </tr>
+    </table>
+    </font><br/>
+    <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/img1.jpg" style = "width:100%">
+    <div class="text">Online Shopping - Enjoy fashion shopping with a difference!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/img2.jpg" style="width:100%">
+    <div class="text">Easy access to wide Range of Products</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/img3.jpg" style="width:100%">
+    <div class="text">Get all your Shopping needs at a single place</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    <br/>
+    <center>
+    <div id="container">
+      <center><h1>Our Visi<span style = "border-bottom: 3px solid white; padding-bottom: 5px; ">on an</span>d Mission</h1></center>
+      Since 2010, Xeanco has envisioned a branded global eCommerce ecosystem, where consumers around
+      the globe can shop directly with their favorite brands and enjoy a shopping experience that makes
+      them feel right at home. To make our vision a reality, our mission is to build the most powerful
+      global eCommerce platform in the world. No matter where the shopper is located, if a brand is based
+      in another country, the shopper’s experience can still feel local and familiar. From pricing to payments,
+      shipping to returns, we use our technology to bring brands and shoppers closer together, making the
+      world feel like a smaller place.
+      <h4>SELL GLOBAL. FEEL LOCAL</h4>
+    </div></center><br/><br/>
+    <table cellpadding = "5" align = "center" width = "100%">
+      <tr><td id = "copyright" bgcolor = "blue" align = "center"><font color = "white"> Copyright &copy 2019 </font></td></tr>
+    </table>
+  </body>
+</html>

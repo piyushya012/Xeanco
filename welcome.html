@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> welcome </title>
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <script src = "javascript/sweetalert.min.js"></script>
+    <script src = "javascript/profile.js"></script>
+    <script src = "javascript/welcome.js"></script>
+  </head>
+  <body bgcolor = "#1b1b1b" link = "#f9f9f3" alink = "#f9f9f3" vlink = "white">
+    <table id = "logo" align = "center" width = "100%">
+      <tr>
+        <td id = "logobox" align = "center">
+          <font color = "#f9f9f3" size = "20">
+            <br/><text id = "logotext"> Xeanco Stores </text><br/>
+            <font face = "serif"> <span class = "auth" onclick = "form(1)">SignUp</span>
+              <span class = "auth" onclick = "form(0)">Login</span>
+            </font><br/><br/>
+          </font>
+        </td>
+      </tr>
+      <tr>
+        <td id = "quoteBox" align = "center" height= "100%">
+          <font face = "georgia" color = "#0e26b1">
+            <br/><br/><br/> <text id = "quote2">STAY HOME AND SHOP ONLINE</text> <br/><br/><br/><br/>
+          </font>
+          <font face = "Segoe Script" color= "#f9f9f3"> <text id = "quote" > " You're too pretty to have to <br/>
+            look for a parking spot "</text>
+          </font>
+        </td>
+      </tr>
+    </table>
+    <div id = "loginCont">
+      <form id = "login" method="post" action="main.html" align = "center">
+        <label>Login Form</label><br/><br/>
+        <label for="email">Email : </label>
+        <input id = "field" type ="email" name = "email" required value = ""/><br/><br/>
+        <input id = "button" type="reset"/>
+        <span onclick = "form(0)"><button id = "button">Cancel</button></span>
+        <input onclick = "login(this.form)" id = "button" type = "submit" value = "Login"/> <br/><br/>
+      </form>
+    </div>
+    <div id = "signupCont">
+      <form id = "signup" method="post" action="#" align = "center">
+        <label>SignUp Form</label><br/><br/>
+        <label for="name">Name : </label>
+        <input id = "field" type="text" name="name" required value=""/><br/><br/>
+        <label for="email">Email : </label>
+        <input id = "field" type ="email" name = "email" required value = ""/><br/><br/>
+        <input id = "button" type="reset"/>
+        <span onclick = "form(1)"><button id = "button">Cancel</button></span>
+        <input onclick = "signup(this.form)" id = "button" type = "submit" value = "SignUp"/> <br/><br/>
+      </form>
+    </div>
+  </body>
+</html>
