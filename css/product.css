@@ -1,0 +1,68 @@
+body{
+  background-size: cover;
+}
+#logo{
+  padding-left: 260px;
+}
+#top{
+  border-radius : 20px 20px 0px 0px;
+  border-top : 5px solid blue;
+}
+#prod{
+  border-radius: 0px 0px 50px 50px;
+  border: 2px solid blue;
+}
+#form{
+  background : rgba(0, 0, 0, 0.7);
+  top: 0%;
+  left: 20%;
+  position : fixed;
+  height: 100%;
+  width: 60%;
+  display: none;
+}
+form{
+  top: 20px;
+  left: 32%;
+  position: relative;
+  font-family: georgia;
+  font-size: 30px;
+  color : white;
+  height: 30%;
+}
+#field {
+  border-radius: 5px;
+  border: 2px solid blue;
+  height: 20px;
+  padding-left: 5px;
+}
+#cost{
+  background: rgba(0, 0, 0, 0);
+  border: 0px;
+  font-size: 30px;
+  color: white;
+}
+#button{
+  padding: 10px;
+  font-size : 20px;
+  height : 45px;
+  border-radius : 5px;
+}
+.cont{
+  font-size: 20px;
+}
+#cart{
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  width: 30%;
+  height : 20%;
+  padding: 20px;
+  background: blue;
+  color : white;
+  text-align: center;
+  font-size: 30px;
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+  display: none;
+}

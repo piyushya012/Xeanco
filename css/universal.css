@@ -1,0 +1,23 @@
+a{
+  text-decoration: none;
+}
+@font-face {
+  font-family: "cuomotype";
+  src: url("cuomotype.ttf");
+  src: url("cuomotype.ttf") format("ttf"),
+  url("cuomotype.ttf") format("opentype");
+}
+@font-face {
+  font-family: "projects";
+  src: url("projects.ttf");
+  src: url("projects.ttf") format("ttf"),
+  url("projects.ttf") format("opentype");
+}
+#home{
+  padding-left: 15px;
+}
+#home2{
+  background: lightskyblue;
+  padding: 14px;
+  border-radius: 20px;
+}

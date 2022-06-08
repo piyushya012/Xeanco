@@ -1,0 +1,14 @@
+#home{
+  padding-left: 15px;
+}
+#logo{
+  padding-left: 280px;
+}
+.heading{
+  border-radius: 20px;
+  border-bottom: 5px solid blue;
+}
+.content{
+  border: 3px solid blue;
+  border-radius: 10px;
+}
