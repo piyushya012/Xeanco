@@ -35,7 +35,7 @@ leave = function(){
     dangerMode: true
   }).then(function(n){
     if(n){
-      window.location = "welcome.html";
+      window.location = "index.html";
     }
   })
 }
@@ -61,7 +61,7 @@ logout = function(){
     buttons: true
   }).then(function(n){
     if(n){
-      window.location = "welcome.html";
+      window.location = "index.html";
     }
   })
 }
@@ -80,7 +80,7 @@ delAcc = function(){
         'Deleted',
         'Account Deleted Successfully',
         'success').then(function(){
-            window.location = "welcome.html";
+            window.location = "index.html";
         })
     }
   })
